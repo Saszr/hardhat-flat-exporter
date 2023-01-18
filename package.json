@@ -1,0 +1,51 @@
+{
+  "name": "hardhat-flat-exporter",
+  "version": "1.0.0",
+  "description": "Export flat contract on compilation via Hardhat.",
+  "keywords": [
+    "hardhat",
+    "buidler",
+    "solidity",
+    "smart-contracts",
+    "ethereum",
+    "blockchain",
+    "version-control",
+    "dapps"
+  ],
+  "license": "MIT",
+  "author": "Saszr",
+  "type": "module",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "microbundle --target node --format modern,cjs",
+    "dev": "microbundle watch --target node --format modern,cjs"
+  },
+  "dependencies": {
+    "rimraf": "^4.1.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^13.1.2",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "hardhat": "^2.0.0",
+    "microbundle": "^0.15.1",
+    "prettier": "^2.8.3",
+    "prettier-plugin-packagejson": "^2.4.0",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "hardhat": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=14.14.0"
+  }
+}

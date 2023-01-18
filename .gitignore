@@ -1,0 +1,44 @@
+# Dependency directory
+node_modules
+
+# Debug log from npm
+npm-debug.log
+
+# local env variables
+.env
+
+# truffle build directory
+build/
+dist/
+
+# macOS
+.DS_Store
+
+# truffle
+.node-xmlhttprequest-*
+
+# IntelliJ IDE
+.idea
+
+# Visual Studio Code
+.vscode
+
+# Remix IDE
+remix-compiler.config.js
+
+# Coverage directory used by tools like istanbul
+coverage
+coverage.json
+coverageEnv
+
+#Hardhat files
+cache
+artifacts
+typechain
+typechain-types
+
+# temporary artifact from solidity-coverage
+allFiredEvents
+.coverage_artifacts
+.coverage_cache
+.coverage_contracts
