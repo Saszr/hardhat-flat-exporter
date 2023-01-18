@@ -12,6 +12,7 @@
     "version-control",
     "dapps"
   ],
+  "repository": "https://github.com/Saszr/hardhat-flat-exporter",
   "license": "MIT",
   "author": "Saszr",
   "type": "module",
@@ -22,6 +23,13 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.module.js",
   "source": "src/index.ts",
+  "files": [
+    "dist/",
+    "src/",
+    "LICENSE",
+    "index.d.ts",
+    "README.md"
+  ],
   "scripts": {
     "build": "microbundle --target node --format modern,cjs",
     "dev": "microbundle watch --target node --format modern,cjs"
